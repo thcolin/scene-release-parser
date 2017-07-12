@@ -17,6 +17,7 @@
         "mhor/php-mediainfo": "~2.1"
     },
     "require-dev": {
-        "codeclimate/php-test-reporter": "dev-master"
+        "codeclimate/php-test-reporter": "dev-master",
+        "phpunit/phpunit": ">=4"
     }
 }
