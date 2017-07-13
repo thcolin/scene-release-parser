@@ -1,8 +1,11 @@
 <?php
 
   use thcolin\SceneReleaseParser\Release;
+  use PHPUnit\Framework\TestCase;
 
-  class ReleaseTest extends PHPUnit_Framework_TestCase{
+  class ReleaseTest extends TestCase {
+
+    private $elements;
 
     public function setUp(){
       $json = file_get_contents(__DIR__.'/../utils/releases.json');
@@ -188,8 +191,10 @@
       }
     }
 
+    /**
+     * @expectedException InvalidArgumentException
+     */
     public function testConstructFail(){
-      $this->setExpectedException('InvalidArgumentException');
       $release = new Release('This is not a good scene release name');
     }
 
