@@ -17,7 +17,7 @@
     const SOURCE_DVDRIP = 'DVDRip';
     const SOURCE_DVDSCR = 'DVDScr';
     const SOURCE_BDSCR  = 'BDScr';
-    const SOURCE_WEB_DL = 'WEB-DL';
+    const SOURCE_WEB_DL = 'WEB';
     const SOURCE_BDRIP = 'BDRip';
     const SOURCE_DVD_R = 'DVD-R';
     const SOURCE_R5 = 'R5';
