@@ -20,6 +20,7 @@
     const SOURCE_WEB_DL = 'WEB';
     const SOURCE_WEBRIP = 'WEBRip';
     const SOURCE_BDRIP = 'BDRip';
+    const SOURCE_BRRIP = 'BRRip';
     const SOURCE_DVD_R = 'DVDR';
     const SOURCE_R5 = 'R5';
     const SOURCE_HDRIP = 'HDRip';
@@ -99,8 +100,6 @@
       self::SOURCE_BDRIP => [
         'bdrip',
         'bd-rip',
-        'brrip',
-        'br-rip'
       ],
       self::SOURCE_DVD_R => [
         'dvd',
@@ -123,6 +122,10 @@
         'bluray',
         'blu-ray',
         'bdr'
+      ],
+      self::SOURCE_BRRIP => [
+        'brrip',
+        'br-rip'
       ],
       self::SOURCE_PDTV => [
         'pdtv'
