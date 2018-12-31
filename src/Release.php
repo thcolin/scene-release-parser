@@ -20,7 +20,7 @@
     const SOURCE_WEB_DL = 'WEB';
     const SOURCE_WEBRIP = 'WEBRip';
     const SOURCE_BDRIP = 'BDRip';
-    const SOURCE_DVD_R = 'DVD-R';
+    const SOURCE_DVD_R = 'DVDR';
     const SOURCE_R5 = 'R5';
     const SOURCE_HDRIP = 'HDRip';
     const SOURCE_BLURAY = 'BLURAY';
