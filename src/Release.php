@@ -175,6 +175,9 @@
       ],
       self::RESOLUTION_1080P => [
         '1080p'
+      ],
+      self::RESOLUTION_2160P => [
+        '2160p'
       ]
     ];
 
@@ -525,7 +528,9 @@
           $height = $video -> get('height') -> getAbsoluteValue();
           $width = $video -> get('width') -> getAbsoluteValue();
 
-          if($height >= 1000 || $width >= 1900){
+          if($height >= 2000 || $width >= 3800){
+            $release -> setResolution(self::RESOLUTION_2160P);
+          } else if($height >= 1000 || $width >= 1900){
             $release -> setResolution(self::RESOLUTION_1080P);
           } else if($height >= 700 || $width >= 1200){
             $release -> setResolution(self::RESOLUTION_720P);

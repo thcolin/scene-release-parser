@@ -16,7 +16,8 @@
     "require": {
         "mhor/php-mediainfo": "~2.1",
         "symfony/console": "^3.2",
-        "symfony/framework-bundle": "^3.2"
+        "symfony/framework-bundle": "^3.2",
+        "thcolin/scene-release-parser": "dev-master"
     },
     "require-dev": {
         "codeclimate/php-test-reporter": "dev-master",
