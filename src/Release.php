@@ -28,6 +28,7 @@
     const SOURCE_HDTV = 'HDTV';
     const SOURCE_CAM = 'CAM';
     const SOURCE_TC = 'TC';
+    const SOURCE_TS = 'TS';
 
     const ENCODING = 'encoding';
     const ENCODING_XVID = 'XviD';
@@ -55,9 +56,11 @@
         'cam',
         'camrip',
         'cam-rip',
+        'pdvd'
+      ],
+      self::SOURCE_TS => [
         'ts',
         'telesync',
-        'pdvd'
       ],
       self::SOURCE_TC => [
         'tc',
