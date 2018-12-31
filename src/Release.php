@@ -425,7 +425,7 @@
           $arrays[] = $array;
         }
       }
-      return preg_replace('#\s+#', '.', implode('.', $arrays)).'-'.($this -> getGroup() ? $this -> getGroup():'NOTEAM');
+      return preg_replace('#\s+#', '.', implode('.', $arrays)).'-'.($this -> getGroup() ? $this -> getGroup():'UNKNOWN');
     }
 
     public static function analyse($path, $config = []){
