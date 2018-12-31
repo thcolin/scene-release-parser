@@ -15,11 +15,13 @@
 
     const SOURCE = 'source';
     const SOURCE_DVDRIP = 'DVDRip';
-    const SOURCE_DVDSCR = 'DVDScr';
+    const SOURCE_DVDSCR = 'DVDSCR';
     const SOURCE_BDSCR  = 'BDScr';
     const SOURCE_WEB_DL = 'WEB';
+    const SOURCE_WEBRIP = 'WEBRip';
     const SOURCE_BDRIP = 'BDRip';
-    const SOURCE_DVD_R = 'DVD-R';
+    const SOURCE_BRRIP = 'BRRip';
+    const SOURCE_DVD_R = 'DVDR';
     const SOURCE_R5 = 'R5';
     const SOURCE_HDRIP = 'HDRip';
     const SOURCE_BLURAY = 'BLURAY';
@@ -41,6 +43,7 @@
     const RESOLUTION_SD = 'SD';
     const RESOLUTION_720P = '720p';
     const RESOLUTION_1080P = '1080p';
+    const RESOLUTION_2160P = '2160p';
 
     const DUB = 'dub';
     const DUB_DUBBED = 'DUBBED';
@@ -87,16 +90,16 @@
         'web-tv',
         'webdl',
         'web-dl',
-        'webrip',
-        'web-rip',
         'webhd',
         'web'
+      ],
+      self::SOURCE_WEBRIP => [
+      'webrip',
+      'web-rip',
       ],
       self::SOURCE_BDRIP => [
         'bdrip',
         'bd-rip',
-        'brrip',
-        'br-rip'
       ],
       self::SOURCE_DVD_R => [
         'dvd',
@@ -119,6 +122,10 @@
         'bluray',
         'blu-ray',
         'bdr'
+      ],
+      self::SOURCE_BRRIP => [
+        'brrip',
+        'br-rip'
       ],
       self::SOURCE_PDTV => [
         'pdtv'
@@ -674,7 +681,7 @@
         $last = $key;
       }
 
-      $return = ucwords(strtolower($return));
+      #$return = ucwords(strtolower($return));
       $return = trim($return);
 
       return $return;
