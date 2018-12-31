@@ -42,6 +42,7 @@
     const RESOLUTION_SD = 'SD';
     const RESOLUTION_720P = '720p';
     const RESOLUTION_1080P = '1080p';
+    const RESOLUTION_2160P = '2160p';
 
     const DUB = 'dub';
     const DUB_DUBBED = 'DUBBED';
