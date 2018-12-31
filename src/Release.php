@@ -452,15 +452,15 @@
           switch($codec){
             case 'DivX':
               $release -> setEncoding(self::ENCODING_DIVX);
-              continue;
+              continue 2;
             break;
             case 'x264':
               $release -> setEncoding(self::ENCODING_X264);
-              continue;
+              continue 2;
             break;
             case 'x265':
               $release -> setEncoding(self::ENCODING_X265);
-              continue;
+              continue 2;
             break;
           }
         }
@@ -469,15 +469,15 @@
           switch($codec){
             case 'DivX':
               $release -> setEncoding(self::ENCODING_DIVX);
-              continue;
+              continue 2;
             break;
             case 'x264':
               $release -> setEncoding(self::ENCODING_X264);
-              continue;
+              continue 2;
             break;
             case 'x265':
               $release -> setEncoding(self::ENCODING_X265);
-              continue;
+              continue 2;
             break;
           }
         }
@@ -486,15 +486,15 @@
           switch($codec){
             case 'DIVX':
               $release -> setEncoding(self::ENCODING_DIVX);
-              continue;
+              continue 2;
             break;
             case 'XVID':
               $release -> setEncoding(self::ENCODING_XVID);
-              continue;
+              continue 2;
             break;
             case 'hvc1':
               $release -> setEncoding(self::ENCODING_X265);
-              continue;
+              continue 2;
             break;
           }
         }
@@ -504,7 +504,7 @@
             switch($codec){
               case 'video/H264':
                 $release -> setEncoding(self::ENCODING_H264);
-                continue;
+                continue 2;
               break;
             }
           }
