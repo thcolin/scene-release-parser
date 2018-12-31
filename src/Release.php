@@ -18,6 +18,7 @@
     const SOURCE_DVDSCR = 'DVDScr';
     const SOURCE_BDSCR  = 'BDScr';
     const SOURCE_WEB_DL = 'WEB';
+    const SOURCE_WEBRIP = 'WEBRip';
     const SOURCE_BDRIP = 'BDRip';
     const SOURCE_DVD_R = 'DVD-R';
     const SOURCE_R5 = 'R5';
@@ -87,10 +88,12 @@
         'web-tv',
         'webdl',
         'web-dl',
-        'webrip',
-        'web-rip',
         'webhd',
         'web'
+      ],
+      self::SOURCE_WEBRIP => [
+      'webrip',
+      'web-rip',
       ],
       self::SOURCE_BDRIP => [
         'bdrip',
